@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>My WORK Room ポートフォリオ</title>
+  <link rel="icon" type="images/png" href="img/4535.jpg">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/5-1-11.css" media="all" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -25,10 +27,23 @@
             <li class="gnav-item"><a href="#works">SAMPLE</a></li>
             <li class="gnav-item"><a href="#skill">SKILL</a></li>
             <li class="gnav-item"><a href="#about">ABOUT</a></li>
-            <!-- <li class="gnav-item"><a href="#contact">CONTACT</a></li> -->
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
+
+      <!-- スマホ用menu -->
+      <div class="openbtn1"><span></span><span></span><span></span></div>
+      <nav id="g-nav">
+        <div id="g-nav-list">
+          <ul>
+            <li><a href="#works">SAMPLE</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!-- /header -->
 
@@ -136,32 +151,35 @@
       <!-- /about -->
 
       <!-- contact -->
-      <!-- <section class="contact section" id="contact">
+      <section class="contact section" id="contact">
         <div class="container">
           <h2 class="title">CONTACT</h2>
-          <p class="lead">
-            お問い合わせは、<br class="sp-only">メールまたはSNSにてお願いいたします。
-          </p>
-          <form action="#">
+           <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="text" name="honeypot" style="display:none">
+            <!-- STATIC FORMSのアクセスキー -->
+            <input type="hidden" name="accessKey" value="48b9dba7-33a8-46f7-8590-4764f2a92907">
+            <!--メールのタイトル-->
+            <input type="hidden" name="subject" value="My WOOK Room CONTACT" />
+            <!--送信先のメールアドレスをvalueに設定する-->
+            <input type="hidden" name="replyTo" value="0501m6027@gmail.com">
+            <!--redirectToのURLは公開後のURLへリンクする-->
+            <input type="hidden" name="redirectTo" value="">
             <div>
-                <label for="name">お名前</label>
-                <input type="text" id="name" name="your-name">
+              <label for="name">NAME</label>
+              <input type="text" placeholder="お名前" id="name" name="name" required>
             </div>
-
             <div>
-                <label for="email">メールアドレス</label>
-                <input type="email" id="email" name="your-mail">
+              <label for="email">Email ADDRESS</label>
+              <input type="email" placeholder="メールアドレス" id="email" name="email" required>
             </div>
-
             <div>
-                <label for="message">メッセージ</label>
-                <textarea id="message" name="your-message"></textarea>
+              <label for="message">MESSAGE</label>
+              <textarea placeholder="お問い合わせ内容" id="message" name="message" required></textarea>
             </div>
-
             <input type="submit" class="button" value="送信">
-        </form>
+          </form>
         </div>
-      </section> -->
+      </section>
       <!-- /contact -->
       <div class="page-top" id="js-page-top">
         <span class="material-icons-outlined">expand_less</span>
@@ -175,7 +193,10 @@
     <!-- /footer -->
 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
