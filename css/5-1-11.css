@@ -55,6 +55,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+  border-bottom: solid #fff ;
 }
 
 /*========= ボタンのためのCSS ===============*/
