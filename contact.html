@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -48,43 +47,43 @@
     </header>
     <!-- /header -->
 
-    <main class="content">
-
-      <article class="article">
-        <div class="article-container">
-          <h2 class="article-title">
-            <span class="bgextend bgLRextendTrigger">
-              <span class="bgappearTrigger">
-                美容室のHP
-              </span>
+    <!-- contact -->
+    <section class="contact section" id="contact" style="background-color: #fff;">
+      <div class="container">
+        <h2 class="title">
+          <span class="bgextend bgLRextendTrigger">
+            <span class="bgappearTrigger">
+              CONTACT
             </span>
-          </h2>
-          <div class="article-body">
-            <p>
-              <img src="img/works-detail/works-3.gif" alt="works-3">
-            </p>
-            <h3 class="TextTyping">担当</h3>
-            <p class="fadeUpTrigger">WordPress構築・コーディング</p>
-            <h3 class="TextTyping">サイトの目的</h3>
-            <p class="fadeUpTrigger">店舗の認知と集客</p>
-            <h3 class="TextTyping">使用技術</h3>
-            <p class="fadeUpTrigger">WordPress</p>
-            <h3 class="TextTyping">コーディングについて</h3>
-            <p class="fadeUpTrigger">
-              ヘアーサロンのHPです。<br>
-              カルーセル（トップ画面での画像スライド）、口コミ情報の表示、GoogleMapでの店舗所在地の表示、お問い合わせフォームなどを実装いたしました。
-            </p>
+          </span>
+        </h2>
+         <form action="https://api.staticforms.xyz/submit" method="post">
+          <input type="text" name="honeypot" style="display:none">
+          <!-- STATIC FORMSのアクセスキー -->
+          <input type="hidden" name="accessKey" value="48b9dba7-33a8-46f7-8590-4764f2a92907">
+          <!--メールのタイトル-->
+          <input type="hidden" name="subject" value="My WOOK Room CONTACT" />
+          <!--送信先のメールアドレスをvalueに設定する-->
+          <input type="hidden" name="replyTo" value="0501m6027@gmail.com">
+          <!--redirectToのURLは公開後のURLへリンクする-->
+          <input type="hidden" name="redirectTo" value="https://atm-09-st.github.io/My_WORK_Room/message.html">
+          <div>
+            <label for="name">NAME</label>
+            <input type="text" placeholder="お名前" id="name" name="name" required>
           </div>
-          <div class="home-link">
-            <a href="index.html#sample" class="btn bgskew"><span>SAMPLE一覧へ</span></a>
+          <div>
+            <label for="email">Email ADDRESS</label>
+            <input type="email" placeholder="メールアドレス" id="email" name="email" required>
           </div>
-        </div>
-      </article>
-
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
+          <div>
+            <label for="message">MESSAGE</label>
+            <textarea placeholder="お問い合わせ内容" id="message" name="message" required></textarea>
+          </div>
+          <input type="submit" class="button" value="送信">
+        </form>
       </div>
-    </main>
+    </section>
+    <!-- /contact -->
 
     <!-- footer -->
     <footer class="footer">
@@ -94,9 +93,9 @@
 
   </div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
-    </script>
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous">
+  </script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
-
 </html>

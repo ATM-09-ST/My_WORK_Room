@@ -132,6 +132,10 @@ img {
     transform: translateX(-50%);
     background-color: #fff;
   }
+
+  .line-color a::after {
+    background-color: #1ca9e3;
+  }
   
   .gnav-item a:hover:after {
     width: 100%;
@@ -160,6 +164,48 @@ img {
 }
 
 /*--------------------------------
+ Slogan
+---------------------------------*/
+.slogan-section {
+  padding: 90px 0;
+  background-color: #4c4c4c;
+}
+
+.slogan-body {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.slogan-title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.slogan-div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slogan-text {
+  font-size: 18px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.contact-btn {
+  font-size: x-large;
+}
+
+/*--------------------------------
  Works
 ---------------------------------*/
 .works-list {
@@ -175,12 +221,18 @@ img {
   color: #333;
 }
 
-.works-item:hover {
-  opacity: .9;
+.works-item img {
+  transform: scale(1);
+  transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+.works-item:hover img {
+  transform: scale(1.125);/*拡大の値を変更したい場合はこの数値を変更*/
 }
 
-.works-item:nth-of-type(3n) {
-  margin-right: 0;
+/*　画像のマスク　*/
+.works-img {
+  line-height: 0;/*行の高さを0にする*/
+  overflow: hidden;/*拡大してはみ出る要素を隠す*/
 }
 
 .works-img img {

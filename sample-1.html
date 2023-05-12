@@ -10,24 +10,24 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/5-1-11.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/animation.css" media="all" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="wrapper">
 
     <!-- header -->
-    <header class="header ">
+    <header class="header">
       <div class="container">
         <h1 class="header-logo">
           <a href="index.html">My WORK Room</a>
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="index.html#sample">SAMPLE</a></li>
-            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
             <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#sample">SAMPLE</a></li>
+            <li class="gnav-item line-color"><a href="contact.html" style="color: #1ca9e3;">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -37,10 +37,10 @@
       <nav id="g-nav">
         <div id="g-nav-list">
           <ul>
-            <li><a href="index.html#sample">SAMPLE</a></li>
-            <li><a href="index.html#skill">SKILL</a></li>
             <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="index.html#skill">SKILL</a></li>
+            <li><a href="index.html#sample">SAMPLE</a></li>
+            <li><a href="contact.html" style="color: #1ca9e3; border-color: #1ca9e3;">CONTACT</a></li>
           </ul>
         </div>
       </nav>
@@ -51,28 +51,34 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">コーポレートサイト</h2>
+          <h2 class="article-title">
+            <span class="bgextend bgLRextendTrigger">
+              <span class="bgappearTrigger">
+                コーポレートサイト
+              </span>
+            </span>
+          </h2>
           <div class="article-body">
             <p>
-              <img src="img/works-detail/works-1.png" alt="">
+              <img src="img/works-detail/works-1.png" alt="works-1">
             </p>
-            <h3>URL</h3>
-            <p><a href="https://atm-09-st.github.io/SocialTech_HTML-CSS/" target="_blank" rel="noopener">https://atm-09-st.github.io/SocialTech_HTML-CSS/</a></p>
-            <h3>担当</h3>
-            <p>コーディング</p>
-            <h3>サイトの目的</h3>
-            <p>企業紹介と問い合わせ窓口</p>
-            <h3>使用技術</h3>
-            <p>HTML/CSS/JavaScript/jQuery</p>
-            <h3>コーディングについて</h3>
-            <p>
+            <h3 class="TextTyping">URL</h3>
+            <p class="fadeUpTrigger"><a href="https://atm-09-st.github.io/SocialTech_HTML-CSS/" target="_blank" rel="noopener">https://atm-09-st.github.io/SocialTech_HTML-CSS/</a></p>
+            <h3 class="TextTyping">担当</h3>
+            <p class="fadeUpTrigger">コーディング</p>
+            <h3 class="TextTyping">サイトの目的</h3>
+            <p class="fadeUpTrigger">企業紹介と問い合わせ窓口</p>
+            <h3 class="TextTyping">使用技術</h3>
+            <p class="fadeUpTrigger">HTML/CSS/JavaScript/jQuery</p>
+            <h3 class="TextTyping">コーディングについて</h3>
+            <p class="fadeUpTrigger">
               5ページから構成される企業様向けのHPを製作いたしました。<br>
               上部メニューを押したときの自動スクロール処理、お問い合わせフォームは指定したメールへ送信される処理を実装しております。
               スマートフォンでも見やすくするためレスポンシブ対応を施しております。
             </p>
           </div>
           <div class="home-link">
-            <a href="index.html#sample">SAMPLE一覧へ</a>
+            <a href="index.html#sample" class="btn bgskew"><span>SAMPLE一覧へ</span></a>
           </div>
         </div>
       </article>
@@ -89,8 +95,8 @@
     <!-- /footer -->
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
   crossorigin="anonymous">
   </script>
   <script type='text/javascript' src="js/script.js"></script>

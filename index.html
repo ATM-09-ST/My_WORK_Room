@@ -10,24 +10,24 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/5-1-11.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/animation.css" media="all" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="wrapper">
 
     <!-- header -->
-    <header class="header ">
+    <header class="header">
       <div class="container">
         <h1 class="header-logo">
-          <a href="#">My WORK Room</a>
+          <a href="index.html">My WORK Room</a>
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="#sample">SAMPLE</a></li>
-            <li class="gnav-item"><a href="#skill">SKILL</a></li>
             <li class="gnav-item"><a href="#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#sample">SAMPLE</a></li>
+            <li class="gnav-item line-color"><a href="contact.html" style="color: #1ca9e3;">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -37,10 +37,10 @@
       <nav id="g-nav">
         <div id="g-nav-list">
           <ul>
-            <li><a href="#sample">SAMPLE</a></li>
-            <li><a href="#skill">SKILL</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#sample">SAMPLE</a></li>
+            <li><a href="contact.html" style="color: #1ca9e3; border-color: #1ca9e3;">CONTACT</a></li>
           </ul>
         </div>
       </nav>
@@ -57,11 +57,128 @@
       </div>
       <!-- /mv -->
 
+      <!-- slogan -->
+      <section class="slogan-section">
+        <div class="slogan-body">
+          <h2 class="slogan-title fadeUpTrigger">Webサイト作成します</h2>
+          <div class="slogan-div">
+            <p class="slogan-text fadeUpTrigger">
+              ご提案のイメージに合わせ、お手頃な価格にてWebサイトを作成します。<br>
+              お気軽にお問い合わせ下さい。
+            </p>
+          </div>
+        </div>
+        <div class="home-link">
+          <a href="contact.html" class="contact-btn btn bgskew"><span>CONTACT</span></a>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="">
+            <h2 class="title">
+              <span class="bgextend bgLRextendTrigger">
+                <span class="bgappearTrigger">
+                  ABOUT
+                </span>
+              </span>
+            </h2>
+          </div>
+          <div class="profile">
+            <!-- <p class="profile-img">
+              <img src="img/about.png" alt="about">
+            </p> -->
+            <div class="profile-body fadeUpTrigger">
+              <p>
+                初めまして、K.U-MA（クマ）と申します。<br><br>
+                当サイトをご覧いただきありがとうございます。<br>
+                現在、副業としてWed製作を行っており、Webサイト作成・コーディング・データベース構築等が行えます。<br>
+                詳しくはSKILLをご覧下さい。また、作成したSAMPLEも掲載していますので、そちらもご覧下さい。<br>
+                ご興味のある方はお気軽にお問い合わせ下さいませ。
+              </p>
+              <p>
+                <br>本サイトはHTML/CSS/JavaScript/jQueryにて作成しております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="container">
+          <h2 class="title">
+            <span class="bgextend bgLRextendTrigger">
+              <span class="bgappearTrigger">
+                SKILL
+              </span>
+            </span>
+          </h2>
+          <div class="skill-list randomScroll">
+            <div class="skill-item box">
+              <p class="skill-img"><img src="img/skills/html.png" alt="html"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML/CSS</h3>
+                <p class="skill-text">
+                  Webサイトの作成が行えます、レスポンシブ対応も可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item box">
+              <p class="skill-img"><img src="img/skills/js.png" alt="js"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-text">
+                  アニメーションでの動きのあるWebサイトが作成できます。</p>
+              </div>
+            </div>
+            <div class="skill-item box">
+              <p class="skill-img"><img src="img/skills/jquery.png" alt="jquery"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">jQuery</h3>
+                <p class="skill-text">
+                  より高度なアニメーションが実装出来ます。</p>
+              </div>
+            </div>
+            <div class="skill-item box">
+              <p class="skill-img"><img src="img/skills/wordpress.png" alt="wordpress"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-text">
+                  WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item box">
+              <p class="skill-img"><img src="img/skills/PHP.png" alt="php"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">PHP</h3>
+                <p class="skill-text">
+                  Webアプリケーションの開発が行えます、またWordPressのカスタマイズも可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item box">
+              <p class="skill-img"><img src="img/skills/MySQL.png" alt="MySQL"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">MySQL</h3>
+                <p class="skill-text">
+                  Webアプリに必要な、データベースの構築、更新、削除が行えます。</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
       <!-- sample -->
       <section class="works section" id="sample">
         <div class="container">
-          <h2 class="title">SAMPLE</h2>
-          <div class="works-list">
+          <h2 class="title">
+            <span class="bgextend bgLRextendTrigger">
+              <span class="bgappearTrigger">
+                SAMPLE
+              </span>
+            </span>
+          </h2>
+          <div class="works-list delayScroll">
             <a class="works-item" href="sample-1.html">
               <div class="works-img"><img src="img/works/html1.png" alt="html1" /></div>
               <p class="works-name">コーポレートサイト</p>
@@ -82,115 +199,11 @@
               <p class="works-name">美容室のHP</p>
               <p class="works-info">WordPress</p>
             </a>
-            <a class="works-item" href="sample-5.html">
-              <div class="works-img"><img src="img/works/sample1_1.jpg" alt="WordPress1" /></div>
-              <p class="works-name">サンプルサイト１</p>
-              <p class="works-info">WordPress</p>
-            </a>
-            <a class="works-item" href="sample-6.html">
-              <div class="works-img"><img src="img/works/smple2_1.png" alt="WordPress2" /></div>
-              <p class="works-name">サンプルサイト２</p>
-              <p class="works-info">WordPress</p>
-            </a>
           </div>
         </div>
       </section>
       <!-- /sample -->
 
-      <!-- skill -->
-      <section class="skill section" id="skill">
-        <div class="container">
-          <h2 class="title">SKILL</h2>
-          <div class="skill-list">
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/html.png" alt="html"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">HTML/CSS</h3>
-                <p class="skill-text">
-                  スマホで見ても表示崩れのないレスポンシブ対応も可能です。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/wordpress.png" alt="wordpress"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">WordPress</h3>
-                <p class="skill-text">
-                  WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/PHP.png" alt="php"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">PHP</h3>
-                <p class="skill-text">
-                  Webアプリケーションの開発が行えます、またWordPressのカスタマイズも可能です。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/MySQL.png" alt="MySQL"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">MySQL</h3>
-                <p class="skill-text">
-                  データベースの作成、更新、削除が行えます。</p>
-              </div>
-          </div>
-        </div>
-      </section>
-      <!-- /skill -->
-
-      <!-- about -->
-      <section class="about section" id="about">
-        <div class="container">
-          <h2 class="title">ABOUT</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <!-- <img src="img/about.png" alt="about"> -->
-            </p>
-            <div class="profile-body">
-              <p>
-                K.U-MA
-              </p>
-              <p>
-                岡山県在住。15年間食品会社に務めております。休職を機にプログラミング学習を始め、副業としてWeb製作を行っております。Web制作におけるコーディング、スマートフォンサイト対応、データベース構築、WordPressなどが対応可能です。低予算にてWebサイトを作成いたします。<br>お気軽にお問い合わせください。
-              </p>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /about -->
-
-      <!-- contact -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <h2 class="title">CONTACT</h2>
-           <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="text" name="honeypot" style="display:none">
-            <!-- STATIC FORMSのアクセスキー -->
-            <input type="hidden" name="accessKey" value="48b9dba7-33a8-46f7-8590-4764f2a92907">
-            <!--メールのタイトル-->
-            <input type="hidden" name="subject" value="My WOOK Room CONTACT" />
-            <!--送信先のメールアドレスをvalueに設定する-->
-            <input type="hidden" name="replyTo" value="0501m6027@gmail.com">
-            <!--redirectToのURLは公開後のURLへリンクする-->
-            <input type="hidden" name="redirectTo" value="https://atm-09-st.github.io/My_WORK_Room/message.html">
-            <div>
-              <label for="name">NAME</label>
-              <input type="text" placeholder="お名前" id="name" name="name" required>
-            </div>
-            <div>
-              <label for="email">Email ADDRESS</label>
-              <input type="email" placeholder="メールアドレス" id="email" name="email" required>
-            </div>
-            <div>
-              <label for="message">MESSAGE</label>
-              <textarea placeholder="お問い合わせ内容" id="message" name="message" required></textarea>
-            </div>
-            <input type="submit" class="button" value="送信">
-          </form>
-        </div>
-      </section>
-      <!-- /contact -->
       <div class="page-top" id="js-page-top">
         <span class="material-icons-outlined">expand_less</span>
       </div>
@@ -203,8 +216,8 @@
     <!-- /footer -->
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
   crossorigin="anonymous">
   </script>
   <script type='text/javascript' src="js/script.js"></script>
